@@ -24,4 +24,12 @@
       @apply rounded-full bg-blue-200 border-blue-400;
     }
   }
+
+  .social-links {
+    @apply flex items-center gap-4;
+
+    img {
+      @apply h-8;
+    }
+  }
 }
