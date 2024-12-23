@@ -57,10 +57,14 @@
     @apply flex justify-between mt-4;
 
     .pet-btn {
-      @apply text-lg font-bold text-teal-800 border-2 border-cyan-100 hover:border-cyan-900 py-2 px-4 rounded-md hover:bg-teal-800 hover:text-white transition-all;
+      @apply text-lg font-bold text-teal-800 border-2 border-cyan-100 hover:border-cyan-900 py-2 px-4 rounded-md hover:bg-teal-800 hover:text-white transition-all select-none;
 
       &.thumb {
         @apply hover:bg-transparent;
+      }
+
+      &.adopted {
+        @apply bg-gray-400 text-gray-200 border-none pointer-events-none cursor-not-allowed select-none;
       }
     }
   }
