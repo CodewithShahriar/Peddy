@@ -150,7 +150,9 @@ class BtnClickHandlers {
       },
     } = await Api.getPetById(petId)
 
-    const detailsElem = `<div class="con w-max"><div class="animal-details bg-white p-8 rounded-xl max-w-[636px]">
+    const detailsElem = `<div class="con w-max">
+    </br></br></br></br></br></br></br></br></br></br>
+    <div class="animal-details bg-white p-8 rounded-xl max-w-[636px]">
         <img
           class="rounded-md w-[636px] aspect-video object-cover"
           src="${image || 'Not Available'}"
@@ -205,7 +207,9 @@ class BtnClickHandlers {
         >
           Cancel
         </button>
-      </div></div>`
+      </div>
+      </br></br></br></br></br>
+      </div>`
 
     Modal.open(detailsElem)
 
@@ -361,6 +365,7 @@ const loadCategories = async () => {
 
 const main = async () => {
   await loadCategories()
+
 
   try {
     const { pets } = await Api.getPets()
