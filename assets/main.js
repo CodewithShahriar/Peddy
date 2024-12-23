@@ -113,12 +113,12 @@ class BtnClickHandlers {
     addToCart(imgUri)
   }
   static adopt = (targetBtn) => {
-    const cdn = `<div class="countdown">
+    const cdn = `<div class="con"><div class="countdown">
         <img src="./assets/images/handshake-ico.png" alt="handshake-ico" />
         <h1>Congrats</h1>
         <p>Adoption process has been started for your pet</p>
         <p id="counter" class="countdown__counter">3</p>
-      </div>`
+      </div></div>`
 
     Modal.open(cdn)
 
@@ -150,7 +150,7 @@ class BtnClickHandlers {
       },
     } = await Api.getPetById(petId)
 
-    const detailsElem = `<div class="animal-details bg-white p-8 rounded-xl max-w-[636px]">
+    const detailsElem = `<div class="con"><div class="animal-details bg-white p-8 rounded-xl max-w-[636px]">
         <img
           class="rounded-md w-[636px] aspect-video object-cover"
           src="${image || 'Not Available'}"
@@ -205,7 +205,7 @@ class BtnClickHandlers {
         >
           Cancel
         </button>
-      </div>`
+      </div></div>`
 
     Modal.open(detailsElem)
 

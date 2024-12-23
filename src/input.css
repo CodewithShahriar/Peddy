@@ -70,7 +70,7 @@
   }
 
   .pet-details-tags {
-    @apply text-gray-600 grid grid-cols-2 gap-2;
+    @apply text-gray-600 grid md:grid-cols-2 gap-2;
 
     li {
       @apply flex items-center gap-2;
