@@ -8,4 +8,8 @@
   .con {
     @apply container mx-auto px-4 md:px-6 lg:px-8;
   }
+
+  .btn-primary {
+    @apply text-white capitalize text-xl font-bold bg-[#0E7A81] px-8 py-4 rounded-xl;
+  }
 }
