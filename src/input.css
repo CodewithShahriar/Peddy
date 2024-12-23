@@ -12,4 +12,16 @@
   .btn-primary {
     @apply text-white capitalize text-xl font-bold bg-[#0E7A81] px-8 py-4 rounded-xl;
   }
+
+  .categories__btn {
+    @apply flex text-2xl font-bold gap-4 items-center py-6 px-12 border-2 border-blue-200 rounded-xl justify-center transition-all;
+
+    img {
+      @apply h-14;
+    }
+
+    &.active {
+      @apply rounded-full bg-blue-200 border-blue-400;
+    }
+  }
 }
