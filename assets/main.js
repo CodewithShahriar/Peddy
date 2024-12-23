@@ -366,7 +366,6 @@ const loadCategories = async () => {
 const main = async () => {
   await loadCategories()
 
-
   try {
     const { pets } = await Api.getPets()
     loadPets(pets)
