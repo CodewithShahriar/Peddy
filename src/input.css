@@ -32,4 +32,62 @@
       @apply h-8;
     }
   }
+
+  .pet-card {
+    @apply border-2 border-gray-200 rounded-lg overflow-hidden p-4;
+  }
+
+  .pet-banner {
+    @apply rounded-lg overflow-hidden;
+  }
+
+  .pet-details-list {
+    @apply text-slate-600 flex flex-col gap-2 mt-4;
+
+    li {
+      @apply flex items-center gap-2;
+
+      img {
+        @apply w-5 aspect-square;
+      }
+    }
+  }
+
+  .pet-btn-groups {
+    @apply flex justify-between mt-4;
+
+    .pet-btn {
+      @apply text-lg font-bold text-teal-800 border-2 border-cyan-100 hover:border-cyan-900 py-2 px-4 rounded-md hover:bg-teal-800 hover:text-white transition-all;
+
+      &.thumb {
+        @apply hover:bg-transparent;
+      }
+    }
+  }
+
+  .loader {
+    width: 60px;
+    aspect-ratio: 2;
+    --g1: no-repeat radial-gradient(circle closest-side, #f72121 90%, #ed888800);
+    --g2: no-repeat radial-gradient(circle closest-side, #ff9d2d 90%, #ed888800);
+    --g3: no-repeat radial-gradient(circle closest-side, #0e7a81 90%, #ed888800);
+    background: var(--g1) 0% 50%, var(--g2) 50% 50%, var(--g3) 100% 50%;
+    background-size: calc(100% / 4) 50%;
+    animation: l3 1s infinite linear;
+  }
+
+  @keyframes l3 {
+    20% {
+      background-position: 0% 0%, 50% 50%, 100% 50%;
+    }
+    40% {
+      background-position: 0% 100%, 50% 0%, 100% 50%;
+    }
+    60% {
+      background-position: 0% 50%, 50% 100%, 100% 0%;
+    }
+    80% {
+      background-position: 0% 50%, 50% 50%, 100% 100%;
+    }
+  }
 }
